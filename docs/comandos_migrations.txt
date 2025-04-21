@@ -1,0 +1,8 @@
+:: PEDIDOS
+->php artisan make:migration create_pedidos_table --create=pedidos
+->php artisan make:controller PedidosController --resource --model=Pedido
+
+--------------------------------------------------------------
+:: Configuracões
+->php artisan make:migration create_configuracoes_table --create=configuracoes
+->php artisan make:controller ConfiguracoesController --resource --model=Configuracao

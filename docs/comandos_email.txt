@@ -1,0 +1,3 @@
+https://medium.com/@techsolutionstuff/laravel-11-send-email-with-attachment-example-8664e9ff3b01
+
+php artisan make:mail CancelamentoMail

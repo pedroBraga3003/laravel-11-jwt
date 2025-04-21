@@ -1,0 +1,11 @@
+{
+    "user": {
+        "name": "Pedro",
+        "email": "pedro.phnb@gmail.com",
+        "tipo_usuario": "E",
+        "updated_at": "2025-04-18T05:14:24.000000Z",
+        "created_at": "2025-04-18T05:14:24.000000Z",
+        "id": 1
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9yZWdpc3RlciIsImlhdCI6MTc0NDk1MzI2NCwiZXhwIjoxNzQ0OTU2ODY0LCJuYmYiOjE3NDQ5NTMyNjQsImp0aSI6IlR3cGlsVlBuR2pWVFVXeXoiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.kSbKE_0NsDrTXqCNYkZGJ4z9_YL9L99bUBSMl8CSzQo"
+}

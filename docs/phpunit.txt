@@ -1,0 +1,4 @@
+php artisan make:test PedidoApiTest
+
+ php artisan make:factory PedidoFactory --model=Pedido
+ php artisan make:factory ConfiguracaoFactory --model=Configuracao
