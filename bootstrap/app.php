@@ -17,16 +17,6 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
     )
-    // ->withMiddleware(    
-    //     JwtMiddleware::class
-    // )
-    // ->withMiddleware(function (JwtMiddleware $jwt_middleware){
-    //     echo '<pre>===========================================<br>';
-    //     print_r('');
-    //     echo'</pre>';
-    //     exit;
-    //     //
-    // })
     ->withMiddleware(function (Middleware $middleware) {
         //
     })

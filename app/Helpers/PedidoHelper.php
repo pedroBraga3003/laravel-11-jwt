@@ -125,12 +125,8 @@ class PedidoHelper {
      * @return void
      */
     public static function disparoNotificacao($pedido,$notificacao){
-        //TODO: Implementar disparo de notificação para o cliente
         $details = [];
         $dados = [];
-        
-        $pedido->email_cliente = 'pedro.phnb@gmail.com';
-
         $dados['id'] = $pedido->id;
         $dados['user_id'] = $pedido->user_id;
         $dados['nome_usuario'] = $pedido->nome_usuario;
