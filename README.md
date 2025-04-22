@@ -148,6 +148,7 @@ docker rm 8aed98564137
 
 - A API estara acessivel em: [http://localhost:8080](http://localhost:8080)
 - Lembre-se de atualizar o ID do container conforme a saída real do seu `docker container ps`.
+- Os arquivos para importar os endpoints no postman estão na pasta 'docs\PostMan'.
 
 ---
 

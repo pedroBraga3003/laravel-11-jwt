@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "6175c737-0a1e-4c95-ace2-d2818cba8d6b",
+		"name": "Onfly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3807961"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Pedro braga\",\n\t\"email\": \"pedro.phnb@gmail.com\",\n\t\"password\": \"12345678\",\n    \"tipo_usuario\": \"E\",\n    \"data_nascimento\": \"1988-03-30\",\n    \"celular\": \"31991943062\",\n    \"ativo\": \"S\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"pedro.phnb@gmail.com\",\n\t\"password\": \"12345678\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTAzMDM4MSwiZXhwIjoxNzQ1MDMzOTgxLCJuYmYiOjE3NDUwMzAzODEsImp0aSI6Ikg2QW9tOG4xdjRFNU1JUG4iLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.GZj-VgQg0eZHP2DZThm2AG6DCLQwCyRQPu4EW1M0rKs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver-usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTAzMDM4MSwiZXhwIjoxNzQ1MDMzOTgxLCJuYmYiOjE3NDUwMzAzODEsImp0aSI6Ikg2QW9tOG4xdjRFNU1JUG4iLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.GZj-VgQg0eZHP2DZThm2AG6DCLQwCyRQPu4EW1M0rKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTAwNzc5MiwiZXhwIjoxNzQ1MDExMzkyLCJuYmYiOjE3NDUwMDc3OTIsImp0aSI6IjlqUnJkNWhkaUFGSU9TOWoiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.50l_BWK6KXBGN248IUkZMB9cJQygng_GaULALN0kJMsssA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/ver-usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"ver-usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTAyNzYwMCwiZXhwIjoxNzQ1MDMxMjAwLCJuYmYiOjE3NDUwMjc2MDAsImp0aSI6IlRqcTBqcmNDZHdQa2VqNzciLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.13qgt3UszktpZkBHLKkssKwYi5vq-lZsrCI4tTTxQW8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Listar-C",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9yZWdpc3RlciIsImlhdCI6MTc0NTAzMjU4NywiZXhwIjoxNzQ1MDM2MTg3LCJuYmYiOjE3NDUwMzI1ODcsImp0aSI6IktWUjBPY3BESEhSSVhScEMiLCJzdWIiOiI0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EZ2cvobAYBvnZQzqO2Ku2UF2sTDj4gvCOxj4yvwFfTk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar-E",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTA4Mzg5OCwiZXhwIjoxNzQ1MDg3NDk4LCJuYmYiOjE3NDUwODM4OTgsImp0aSI6IjA1VERJTHBmb0pxQTRRNDgiLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5lR8ibNiY971cIoejblYTYT6U6S1UHk_QG4RrJob2pY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos?status=S&tipo_data_busca=ida&data_inicio=2025-04-01&data_fim=2025-04-25&destino=Pi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "S"
+								},
+								{
+									"key": "tipo_data_busca",
+									"value": "ida"
+								},
+								{
+									"key": "data_inicio",
+									"value": "2025-04-01"
+								},
+								{
+									"key": "data_fim",
+									"value": "2025-04-25"
+								},
+								{
+									"key": "destino",
+									"value": "Pi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "visualizar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTAzMjk4NCwiZXhwIjoxNzQ1MDM2NTg0LCJuYmYiOjE3NDUwMzI5ODQsImp0aSI6IlFxdW02NlN3NlpFSG1MZFEiLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._1bBS3w5ConMFp-MzCECcVs4nbh2_yxJ6NO_nD-tMQI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9yZWdpc3RlciIsImlhdCI6MTc0NTAzMjU4NywiZXhwIjoxNzQ1MDM2MTg3LCJuYmYiOjE3NDUwMzI1ODcsImp0aSI6IktWUjBPY3BESEhSSVhScEMiLCJzdWIiOiI0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EZ2cvobAYBvnZQzqO2Ku2UF2sTDj4gvCOxj4yvwFfTk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"origem\": \"Belo Horizonte / MG\",\r\n\t\"destino\": \"Piuma / ES\",\r\n\t\"data_ida\": \"2025-04-19 00:00:00\",\r\n\t\"data_volta\": \"2025-04-30 00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar N",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9yZWdpc3RlciIsImlhdCI6MTc0NTAzNDQ5MiwiZXhwIjoxNzQ1MDM4MDkyLCJuYmYiOjE3NDUwMzQ0OTIsImp0aSI6IkNHYXRTMmJxckpRNUNXQUMiLCJzdWIiOiI1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5JVsqFBZz0RUpkMChZELugy3cjGic1VA_E_rZFkkAOw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"origem\": \"Belo Horizonte / MG\",\r\n\t\"destino\": \"Divinopolis / MG\",\r\n\t\"data_ida\": \"2025-04-19 00:00:00\",\r\n\t\"data_volta\": \"2025-04-30 00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar - E",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTExNjg5NSwiZXhwIjoxNzQ1MTIwNDk1LCJuYmYiOjE3NDUxMTY4OTUsImp0aSI6InE4R0RlNnVESUxUUzYyMFUiLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.R3u6YtgCPBP7nTjueXaDqYiBtFQCUDhbWG2XzaKwiVo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"origem\": \"Belo Horizonte / MG\",\r\n\t\"destino\": \"Piuma / ES\",\r\n\t\"data_ida\": \"2025-04-19 00:00:00\",\r\n\t\"data_volta\": \"2025-04-30 00:00:00\",\r\n    \"status\":\"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar - E",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9sb2dpbiIsImlhdCI6MTc0NTA4NzYzMywiZXhwIjoxNzQ1MDkxMjMzLCJuYmYiOjE3NDUwODc2MzMsImp0aSI6IjJmWmcwbVp0UFFFa2J5VDgiLCJzdWIiOiIzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3hLv8Hg_F48mTuEzebBmJ5nvoUdAIO0PJVBUKfAHsDc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"origem\": \"Belo Horizonte / MG\",\r\n\t\"destino\": \"Piuma / ES\",\r\n\t\"data_ida\": \"2025-04-19 00:00:00\",\r\n\t\"data_volta\": \"2025-04-30 00:00:00\",\r\n    \"status\":\"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos/cancelar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos",
+								"cancelar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar - C",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2xhcmF2ZWwvbGFyYXZlbC0xMS1qd3QvcHVibGljL2FwaS9yZWdpc3RlciIsImlhdCI6MTc0NTAzMjU4NywiZXhwIjoxNzQ1MDM2MTg3LCJuYmYiOjE3NDUwMzI1ODcsImp0aSI6IktWUjBPY3BESEhSSVhScEMiLCJzdWIiOiI0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EZ2cvobAYBvnZQzqO2Ku2UF2sTDj4gvCOxj4yvwFfTk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"origem\": \"Belo Horizonte / MG\",\r\n\t\"destino\": \"Piuma / ES\",\r\n\t\"data_ida\": \"2025-04-19 00:00:00\",\r\n\t\"data_volta\": \"2025-04-30 00:00:00\"\r\n\t//\"status\": \"C\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/laravel/laravel-11-jwt/public/api/pedidos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"laravel",
+								"laravel-11-jwt",
+								"public",
+								"api",
+								"pedidos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
